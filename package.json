@@ -1,0 +1,26 @@
+{
+  "name": "playwright-typescript-enableedge",
+  "version": "1.0.0",
+  "description": "Test automation framework for Automation Exercise using TypeScript and Playwright",
+  "main": "index.js",
+  "scripts": {
+    "clean:folders": "rm -R -Force allure-results/*",
+    "beforetest": "npm run clean:folders",
+    "test": "npm run beforetest || npm run test:ui || npm run serve-report",
+    "test:ui": "npx playwright test tests/ui/ --headed",
+    "test:api": "playwright test tests/api/",
+    "serve-report": "allure serve allure-results",
+    "install:playwright": "playwright install"
+  
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/jest": "^29.5.10",
+    "@types/node": "^20.8.0",
+    "allure-playwright": "^2.15.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
+}
