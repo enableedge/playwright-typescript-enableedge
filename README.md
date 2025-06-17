@@ -1,17 +1,17 @@
-# Automation Exercise Test Framework
+# GEN-AI 🤖 Test Automation Framework
 
 [![License](https://img.shields.io/github/license/enableedge/playwright-typescript-enableedge?style=for-the-badge)](https://github.com/enableedge/playwright-typescript-enableedge)
 [![Playwright MCP](https://img.shields.io/badge/Playwright-MCP-green.svg)](https://github.com/microsoft/playwright-mcp)
 [![GitHub issues](https://img.shields.io/github/issues/enableedge/playwright-typescript-enableedge?style=for-the-badge)](https://github.com/enableedge/playwright-typescript-enableedge/issues)
 
 
-A comprehensive test automation framework built with TypeScript and Playwright for automating the web UI and API test cases.
-Useing Playwright MCP server 🎭 integrated with VS code and Github Co-Pilot test cases can generated automatically based manual test cases 
+A comprehensive test automation framework built with TypeScript and Playwright for automating the web UI and API test cases. !
+Test cases can be generated / created using GenAI🤖 tools (Playwright MCP server 🎭 integrated with VS code and Github Co-Pilot) based on manual test cases
 
 ## Description
 
 This repository contains a sample repository for UI and API automation using TypeScript and Playwright. The framework follows the Page Object Model (POM) design pattern and supports both UI and API testing.
-Framework also support generating automated test cases based on manual test case steps using AI, through  🎭 Playwright MCP server, VS code and Github Co-pilot.
+Framework also support generating automated test cases based on manual test case steps using GenAI 🤖, through  🎭 Playwright MCP server, VS code and Github Co-pilot.
 
 ## Getting Started
 
@@ -58,8 +58,55 @@ npm run test -- <path-to-test-file>
 ```
 ![playwright-recording](./docs/playwright_recording.gif)
 ![allure-report](./docs/allure-report-pw.png)
-### Built With
 
+
+
+### Setting up Playwright MCP
+
+[Playwright MCP](https://github.com/microsoft/playwright-mcp) (Model Context Protocol) enables AI-assisted test generation and maintenance within VS Code.
+
+1. Install the Playwright extension for VS Code:
+```bash
+code --install-extension ms-playwright.playwright
+```
+
+2. Enable Playwright MCP in VS Code settings:
+   - Open VS Code settings (File > Preferences > Settings)
+   - Search for "Playwright MCP"
+   - Check "Enable Playwright MCP Server"
+   - Or add this to your settings.json:
+```json
+{
+    "playwright.mcp.enabled": true
+}
+```
+
+3. Start using Playwright MCP:
+   - Open VS Code's Command Palette (CMD+Shift+P / Ctrl+Shift+P)
+   - Type "Playwright: Start MCP Server" and select it
+   - Check the Output panel (CMD+Shift+U / Ctrl+Shift+U) and select "Playwright MCP" from the dropdown
+   - You should see logs indicating the MCP server has started
+
+4. Generate tests:
+   - With MCP running, you can use natural language to describe test scenarios e.g. [Sample manual test case ](https://github.com/enableedge/playwright-typescript-enableedge/blob/main/docs/mcp-ai/sample%20test%20case%20prompt%20to%20llm.txt) 
+   - MCP will automate the browser and generate corresponding Playwright test code [Code generated as per above test case](https://github.com/enableedge/playwright-typescript-enableedge/blob/main/tests/ui/order_placement.spec.ts)
+   - The generated tests will use modern Playwright practices and locators
+
+Tips:
+- Keep the Output panel open to monitor MCP's actions
+- MCP generates tests based on actual browser interactions
+- The generated tests are saved in your project's test directory
+- You can modify the generated tests as needed
+
+## 🎬 Demo Video
+Watch the live demonstration of GenAI based Playwright testing in action:
+
+[![GenAI Playwright Testing Demo](/docs/mcp-ai/MCP_Playwright_execution.png)](/docs/mcp-ai/MCP_Playwright_recording_no_mic.mp4)
+**📺 [Watch Demo Video](https://github.com/enableedge/playwright-typescript-enableedge/blob/main/docs/mcp-ai/MCP_Playwright_recording_no_mic.mp4)** - See how to write and execute tests using natural language with Playwright MCP and GitHub Copilot.
+
+
+### Built With
+- [Playwright MCP](https://github.com/microsoft/playwright-mcp) - MCP server for playwrite
 - [TypeScript](https://www.typescriptlang.org/) - Programming language
 - [Playwright](https://playwright.dev/) - Test automation framework
 - [Allure Report](https://docs.qameta.io/allure/) - Test reporting tool
@@ -67,4 +114,4 @@ npm run test -- <path-to-test-file>
 
 ### License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
