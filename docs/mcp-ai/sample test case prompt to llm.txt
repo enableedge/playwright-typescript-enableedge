@@ -9,4 +9,4 @@ Generate a Playwright test for the following scenario:
 8. Verify "Place Order" button visible
 8. add comment as "blue top comment" 
 9. click on "Place Order" button to navigate to payments
-10 verify user  is on Payments page
+10. verify user  is on Payments page
