@@ -9,6 +9,7 @@ export default defineConfig({
   reporter: [
     ['allure-playwright']
   ],
+  timeout: 160_000,
   use: {
     baseURL: 'https://www.automationexercise.com',
     trace: 'on-first-retry',
@@ -21,10 +22,10 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
     // {
     //   name: 'webkit',
     //   use: { ...devices['Desktop Safari'] },

@@ -1,14 +1,17 @@
 # Automation Exercise Test Framework
 
 [![License](https://img.shields.io/github/license/enableedge/playwright-typescript-enableedge?style=for-the-badge)](https://github.com/enableedge/playwright-typescript-enableedge)
+[![Playwright MCP](https://img.shields.io/badge/Playwright-MCP-green.svg)](https://github.com/microsoft/playwright-mcp)
 [![GitHub issues](https://img.shields.io/github/issues/enableedge/playwright-typescript-enableedge?style=for-the-badge)](https://github.com/enableedge/playwright-typescript-enableedge/issues)
 
 
 A comprehensive test automation framework built with TypeScript and Playwright for automating the web UI and API test cases.
+Useing Playwright MCP server 🎭 integrated with VS code and Github Co-Pilot test cases can generated automatically based manual test cases 
 
 ## Description
 
-This repository contains asample repository for UI and API automation using TypeScript and Playwright. The framework follows the Page Object Model (POM) design pattern and supports both UI and API testing.
+This repository contains a sample repository for UI and API automation using TypeScript and Playwright. The framework follows the Page Object Model (POM) design pattern and supports both UI and API testing.
+Framework also support generating automated test cases based on manual test case steps using AI, through  🎭 Playwright MCP server, VS code and Github Co-pilot.
 
 ## Getting Started
 

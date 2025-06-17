@@ -1,0 +1,12 @@
+Generate a Playwright test for the following scenario:
+1. Navigate to https://www.automationexercise.com/
+2. Click on "Signup / Login" link to login
+3. Enter "ulhas@enableedge.com" as email and "ulhas@123" as password and Click on Login button 
+4. Click on "Products" links 
+5. add "Blue Top" to the cart 
+6. navigate to View Cart by clicking on "View Cart" link
+7. Click on "Proceed To Checkout" button 
+8. Verify "Place Order" button visible
+8. add comment as "blue top comment" 
+9. click on "Place Order" button to navigate to payments
+10 verify user  is on Payments page
