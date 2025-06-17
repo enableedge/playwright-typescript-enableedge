@@ -1,9 +1,9 @@
 # GEN-AI 🤖 Test Automation Framework
 
 [![License](https://img.shields.io/github/license/enableedge/playwright-typescript-enableedge?style=for-the-badge)](https://github.com/enableedge/playwright-typescript-enableedge)
-[![Playwright MCP](https://img.shields.io/badge/Playwright-MCP-green.svg)](https://github.com/microsoft/playwright-mcp)
 [![GitHub issues](https://img.shields.io/github/issues/enableedge/playwright-typescript-enableedge?style=for-the-badge)](https://github.com/enableedge/playwright-typescript-enableedge/issues)
-
+[![Playwright MCP](https://img.shields.io/badge/Playwright-MCP-green.svg)](https://github.com/microsoft/playwright-mcp)
+[<img src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Editor&color=0098FF" alt="Install in VS Code">]
 
 A comprehensive test automation framework built with TypeScript and Playwright for automating the web UI and API test cases. !
 Test cases can be generated / created using GenAI🤖 tools (Playwright MCP server 🎭 integrated with VS code and Github Co-Pilot) based on manual test cases
@@ -61,11 +61,12 @@ npm run test -- <path-to-test-file>
 
 
 
-### Setting up Playwright MCP
+### Setting up Playwright MCP 🎭
 
 [Playwright MCP](https://github.com/microsoft/playwright-mcp) (Model Context Protocol) enables AI-assisted test generation and maintenance within VS Code.
 
 1. Install the Playwright extension for VS Code:
+[<img src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Extension&color=0098FF" alt="Install in VS Code">](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
 ```bash
 code --install-extension ms-playwright.playwright
 ```
